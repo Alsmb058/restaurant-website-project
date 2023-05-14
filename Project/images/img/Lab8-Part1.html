@@ -1,0 +1,80 @@
+<html>
+<head>
+
+<style>
+div.article {
+  margin: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+  height: 600px;
+}
+
+div.article:hover {
+  border: 2px solid #FF8C00;
+}
+
+div.head {
+  padding: 15px;
+  text-align: center;
+  color: #FF8C00;
+}
+
+.button {
+  background-color: #FF4500;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: white; 
+  color: #FF4500;
+  border: 3px solid #FF4500;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+</style>
+
+<script>
+function searchFunction() {
+  x = document.getElementsByClassName("article");
+  q = document.getElementById("tsearch");
+  q.value = q.value.toUpperCase();
+  for (i = 0; i < x.length; i++) {
+	let text = x[i].children[0].children[1].innerText.toUpperCase()
+	let position = text.search(q.value);
+  	if(position > -1){
+  		x[i].style.display = "";
+  	} else {
+  		x[i].style.display = "none";
+  	}
+  }
+}
+
+</script>
+</head>
+<body>
+
+<div>
+<input style="width: 80%;" type="text" placeholder="Enter the keywords" id="tsearch"> <button class="button" onclick="searchFunction()">Search</button>
+</div> 
+
+<div class="article">
+  <div class="head">
+	  <h2></h2>
+	  <p></p>
+  </div>
+</div>
+
+</body>
+</html>

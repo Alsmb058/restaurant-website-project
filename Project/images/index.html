@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzah </title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img class="logo" src="./img/logo.png" alt="Pizzah logo">
+            <nav>
+                <ul>
+                    <li> <a href="#home">home</a></li>
+                    <li> <a href="#menu">menu</a></li>
+                    <li> <a href="#offers">offers</a></li>
+                    <li> <a href="#daytime">daytime</a></li>
+                    <li> <a href="#about">about</a></li>
+                    <li> <a href="#contact">contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>welcome to <span class="primary-text">pizzah </span> restairant</h1>
+            <p>here you can find the most delicioius food</p>
+            <a href="#myInput" class="btn btn-primary">Instantly Search</a>
+            <a href="#order" class="btn btn-third">Order now</a>
+        </div>
+
+    </header>
+    <div class="search">
+    <h2>our menu search bar</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type in our dish" title="Type in our dish">
+
+<ul id="myUL">
+  <li><a href="#">risotto</a></li>
+  <li><a href="#">gnocchi</a></li>
+
+  <li><a href="#">PESTO ALLA GENOVESE</a></li>
+  <li><a href="#">lasagne</a></li>
+
+  <li><a href="#">ribollita</a></li>
+  <li><a href="#">tortelli and RAVIOLI</a></li>
+  <li><a href="#">focaccia</a></li>
+  <li><a href="#">arancini</a></li>
+  <li><a href="#">panzerotto fritto</a></li>
+  <li><a href="#">TIRAMISU</a></li>
+</ul>
+</div>
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="title">
+                    <h2>The pizzah History</h2>
+                    <p>More than 25+ years of experience
+
+                    </p>
+                </div>
+                <div class="about-content">
+                    <div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut atque consectetur a
+                            repellendus, tempore qui quasi distinctio fuga numquam maxime cumque quae repellat? Quas
+                            odio vitae quae sit, illum ratione?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut atque consectetur a
+                            repellendus, tempore qui quasi distinctio fuga numquam maxime cumque quae repellat? Quas
+                            odio vitae quae sit, illum ratione?</p>
+                        <a href="#" class="btn btn-secondary">Learn more</a>
+                    </div>
+                 
+                    
+                    <img id='menuImg' src="./img/s4.webp" onmouseover="hover(this);" onmouseout="hoverOut(this)"/>
+                </div>
+            </div>
+        </section>
+        <section id="offers">
+            <div class="container">
+                <div class="title">
+                    <h2>our special offers</h2>
+                    <p>More than 25+ years of experience </p>
+
+                </div>
+                <div class="offers-items">
+                    <div>
+
+                        <div>
+                            <img src="https://cdn.shopify.com/s/files/1/0620/4194/8332/products/product-beauty-the-margherita.png?v=1656423819"
+                                alt="margherita pizza">
+                            <h3>margherita pizza</h3>
+
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex culpa aperiam sint harum
+                                assumenda inventore dolorum officia velit voluptatum voluptatibus perferendis cum
+                                laborum quisquam nihil aliquid vel unde, odio consectetur.</p>
+                            <p><del>$55.00</del><span class="primary-text
+                        ">$18.00</span></p>
+                        </div>
+                        <div>
+                            <img src="./img/lasagne.jpeg"
+                                alt="lasagne">
+                            <h3>lasagne/h3>
+
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex culpa aperiam sint harum
+                                assumenda inventore dolorum officia velit voluptatum voluptatibus perferendis cum
+                                laborum quisquam nihil aliquid vel unde, odio consectetur.</p>
+                            <p><del>$55.00</del><span class="primary-text
+                        ">$18.00</span></p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container">
+                <div class="title">
+                    <h2>our special menu</h2>
+                    <p>order two and get third for free </p>
+
+                </div>
+                <div class="menu-items">
+                    <div class="menu-items-left">
+                        <div class="menu-item">
+                            <img src="./img/risotto.jpeg" alt="risotto">
+                            <div>
+                                <h3>risotto <span class="primary-text">$18.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/gnocchi.jpeg" alt="gnocchi">
+                            <div>
+                                <h3>gnocchi<span class="primary-text">$25.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/pesto alla genovese.jpeg" alt="pesto alla genovese">
+                            <div>
+                                <h3>pesto alla genovese <span class="primary-text">$10.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/lasagne.jpeg" alt="lasagne">
+                            <div>
+                                <h3>lasagne <span class="primary-text">$15.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/ribollita.jpeg" alt="ribollita">
+                            <div>
+                                <h3>ribollita <span class="primary-text">$30.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-items-right">
+                        <div class="menu-item">
+                            <img src="./img/tortelli.jpeg" alt="tortelli">
+                            <div>
+                                <h3>tortelli<span class="primary-text">$25.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/focaccia.jpeg" alt="focaccia">
+                            <div>
+                                <h3>focaccia<span class="primary-text">$25.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/arancini.jpeg" alt="arancini">
+                            <div>
+                                <h3>arancini <span class="primary-text">$16.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/panzerotto fritto.jpeg" alt="panzerotto fritto">
+                            <div>
+                                <h3>panzerotto fritto <span class="primary-text">$23.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/tiramisu.jpeg" alt="tiramisu">
+                            <div>
+                                <h3>tiramisu <span class="primary-text">$17.00</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--start order -->
+        <section id="order">
+            <div class="container">
+                <div class="title">
+                    <h2>Customer order</h2>
+                    <p>count your order </p>
+
+                </div>
+                <div>
+                    <input type="text" id="name" placeholder="name">
+                    <input type="text" id="input1" placeholder="price">
+                    <input type="number" id="input2" placeholder="quantity">
+                    <button class="btn" onclick="insertData()">Insert</button>
+                    <button class="btn" onclick="deleteData()">Delete</button>
+                    <br />
+                    <br />
+                    <table border="2" id="mytable">
+                        <tr>
+                            <th>name</th>
+                            <th>price</th>
+                            <th>quantity</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!--end order -->
+
+
+        <section id="daytime">
+            <div class="container">
+                <div class="daytime-items">
+                    <div class="daytime-item">
+                        <img src="./img/breakfast.png" alt="breakfast">
+                        <h3>breakfast</h3>
+                        <p>8:00 am to 10: am</p>
+                    </div>
+                    <div class="daytime-item">
+                        <img src="./img/lunch.png" alt="lunch">
+                        <h3>lunch</h3>
+                        <p>4:00 pm to 7:00 pm</p>
+                    </div>
+                    <div class="daytime-item">
+                        <img src="./img/dinner.png" alt="dinner">
+                        <h3>dinner</h3>
+                        <p>9:00 pm to 1:00 am</p>
+                    </div>
+                    <div class="daytime-item">
+                        <img src="./img/dessert.png" alt="dessert">
+                        <h3>dessert</h3>
+                        <p>all day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div>
+                            <h3>address</h3>
+                            <p><i class="fa-solid fa-location-dot"></i><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29019.267833778893!2d46.700920584765655!3d24.60960246025295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0504ef8f34b7%3A0x994aa509a4612521!2sPizza%201!5e0!3m2!1sen!2ssa!4v1684000800184!5m2!1sen!2ssa"
+                                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                            <p><i class="fa-sharp fa-solid fa-phone"></i>phone:0000440</p>
+                            <p><i class="fa-solid fa-envelope"></i>support@pizzah</p>
+                        </div>
+                        <div>
+                            <h3>working hours</h3>
+                            <p>8:00 am to 11:00 pm on weekdays</p>
+                            <p>11:00 am to 1:00 am on weekends</p>
+                        </div>
+                        <div>
+                            <h3>follow us</h3>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <form>
+                        <input type="text" name="name" id="name" placeholder="full name" required>
+                        <input type="email" name="email" id="email" placeholder="email address" required>
+                        <input type="text" name="subject" id="subject" placeholder="subject" required>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="message"></textarea>
+                        <button type="submit" class="btn">send message </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <p>copyright &copy; 2023 ALL RIGHT RESERVED | MADE BY <B> ALI BAWAZIR</B></p>
+    </footer>
+   
+
+</body>
+
+</html>
